@@ -1,32 +1,33 @@
 import React from "react";
 import Button from "../Button";
+import style from "./Form.module.scss";
 
 export default function Form() {
   return (
-    <form>
-      <div>
-        <label htmlFor="tarefa">Adicione um novo estudo</label>
+    <form className={style.newTask}>
+      <div className={style.inputContainer}>
+        <label htmlFor="task">Adicione um novo estudo</label>
         <input
           type="text"
-          name="tarefa"
-          id="tarefa"
-          placeholder="O que você quer estudar"
+          name="task"
+          id="task"
+          placeholder="O que você quer estudar?"
           required
         />
       </div>
-      <div>
-        <label htmlFor="tempo">` Tempo</label>
+      <div className={style.inputContainer}>
+        <label htmlFor="timer">Tempo</label>
         <input
           type="time"
           step="1"
-          name="tempo"
-          id="tempo"
+          name="timer"
+          id="timer"
           min="00:00:00"
           max="01:30:00"
           required
         />
       </div>
-      <Button />
+      <Button>Adicionar</Button>
     </form>
   );
 }
