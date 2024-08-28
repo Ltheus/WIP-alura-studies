@@ -103,7 +103,7 @@ section {
 }
 
 body {
-  line-height: 1.2;
+  line-height: .9;
 }
 
 ol,
@@ -146,14 +146,14 @@ button {
   color: inherit;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap');
 
 body {
   display: flex;
   justify-content: center;
-  font-family: 'Manjari', sans-serif;
-  color: #292929;
-  background-color: #e2e2e2;
+  font-family: 'Quicksand', sans-serif;
+  color: #1d1d1d;
+  background-color: #464646;
   height: 100%;
   width: 100%;
   padding: 16px;

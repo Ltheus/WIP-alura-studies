@@ -1,8 +1,8 @@
 .button {
     align-self: center;
-    background-color: #88bcd1;
+    background-color: #e2e2e2;
     border-radius: 10px;
-    box-shadow: 2px 4px 4px #0000009F;
+    box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.259);
     color: #272626;
     font-size: 1rem;
     padding: 16px;
@@ -10,7 +10,7 @@
     cursor: pointer;
     
     &:active {
-        background-color: #7CA6B7;
+        background-color: #cfcfcf;
         box-shadow: 2px 2px 4px #0000009F inset;
     }
 }

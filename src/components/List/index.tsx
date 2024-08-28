@@ -23,6 +23,18 @@ export default function List() {
       name: "React",
       time: "02:00:00",
     },
+    {
+      name: "React",
+      time: "02:00:00",
+    },
+    {
+      name: "React",
+      time: "02:00:00",
+    },
+    {
+      name: "React",
+      time: "02:00:00",
+    },
   ];
 
   return (
