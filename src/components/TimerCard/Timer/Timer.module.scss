@@ -1,0 +1,24 @@
+.timerNumber {
+    background-color: #5D677C;
+    box-shadow: 2px 2px 4px #2B2B2B inset;
+    height: 2.5rem;
+    width: 3rem;
+    padding: 8px 4px;
+    margin: 0 2px;
+    border-radius: 10px;
+    text-align: center;
+
+    @media screen and (min-width:1280px) {
+        height: 4.5rem;
+        width: 5rem;
+    }
+}
+
+.timerDivision {
+    height: 3rem;
+    text-align: center;
+    
+    @media screen and (min-width:1280px) {
+        height: 5rem;
+    }
+}
