@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../Button";
 import style from "./Form.module.scss";
 import { ITask } from "../../types/task";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Form({
   setTasks,
@@ -15,8 +16,14 @@ export default function Form({
 
   const addTask = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("penis!!", task);
-    setTasks((tasks) => [...tasks, { ...task }]);
+    setTasks((oldTasks) => [
+      ...oldTasks,
+      { ...task, selected: false, completed: false, id: uuidv4() },
+    ]);
+    setTask({
+      name: "",
+      time: "",
+    });
   };
 
   return (
