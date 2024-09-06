@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./List.module.scss";
-import Item from "./Item";
+import { Item } from "./Item";
 import { ITask } from "../../types/task";
 
 interface taskProps {
@@ -8,7 +8,7 @@ interface taskProps {
   selectTask: (selectedTask: ITask) => void;
 }
 
-export default function List({ tasks, selectTask }: taskProps) {
+export const List = ({ tasks, selectTask }: taskProps) => {
   return (
     <aside className={style.taskList}>
       <h2>Estudos do dia</h2>
@@ -19,4 +19,4 @@ export default function List({ tasks, selectTask }: taskProps) {
       </ul>
     </aside>
   );
-}
+};

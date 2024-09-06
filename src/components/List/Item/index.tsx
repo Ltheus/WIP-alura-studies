@@ -6,14 +6,19 @@ interface itemProps {
   selectTask: (selectedTask: ITask) => void;
 }
 
-export default function Item({ task, selectTask }: itemProps) {
+export const Item = ({ task, selectTask }: itemProps) => {
   return (
     <li
-      className={`${style.listItem} ${task.selected ? style.selectedItem : ""}`}
-      onClick={() => selectTask(task)}
+      className={`${style.listItem} ${
+        task.selected ? style.selectedItem : ""
+      } ${task.completed ? style.completedItem : ""}`}
+      onClick={() => !task.completed && selectTask(task)}
     >
       <h3>{task.name}</h3>
       <span>{task.time}</span>
+      {task.completed && (
+        <span className={style.done} aria-label="Task completed"></span>
+      )}
     </li>
   );
-}
+};

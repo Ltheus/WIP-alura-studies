@@ -1,14 +1,14 @@
 import React from "react";
-import Button from "../Button";
+import { Button } from "../Button";
 import style from "./Form.module.scss";
 import { ITask } from "../../types/task";
 import { v4 as uuidv4 } from "uuid";
 
-export default function Form({
+export const Form = ({
   setTasks,
 }: {
   setTasks: React.Dispatch<React.SetStateAction<ITask[]>>;
-}) {
+}) => {
   const [task, setTask] = React.useState({
     name: "",
     time: "00:00",
@@ -53,7 +53,7 @@ export default function Form({
           onChange={(e) => setTask({ ...task, time: e.target.value })}
         />
       </div>
-      <Button>Adicionar</Button>
+      <Button type="submit">Adicionar</Button>
     </form>
   );
-}
+};
