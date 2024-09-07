@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ITask } from "../../types/task";
-import { timeToSeconds } from "../../utils/date";
+import { timeToSeconds } from "../../utils/time";
 import { Button } from "../Button";
 import { Timer } from "./Timer";
 import style from "./TimerCard.module.scss";
