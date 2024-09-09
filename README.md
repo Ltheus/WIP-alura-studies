@@ -1,6 +1,6 @@
 # App para organização de estudos - Studyle
 
-^Desenvolvido por: Matheus Giusto Lopes^
+<sup>Desenvolvido por: Matheus Giusto Lopes</sup>
 
 > Essa aplicação foi desenvolvida para fins acadêmicos, seguindo as aulas do curso "React: escrevendo com Typescript" da plataforma Alura. Não é recomendado o seu uso em situações reais.
 
