@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# App para organização de estudos - Studyle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<sup>Desenvolvido por: Matheus Giusto Lopes</sup>
 
-## Available Scripts
+> Essa aplicação foi desenvolvida para fins acadêmicos, seguindo as aulas do curso "React: escrevendo com Typescript" da plataforma Alura. Não é recomendado o seu uso em situações reais.
 
-In the project directory, you can run:
+## O que é o Studyle?
 
-### `npm start`
+O ***Studyle*** é uma aplicação que tem a finalidade de auxiliar o usuário com a organização de seus estudos e / ou tarefas, permitindo a criação de uma lista de tarefas, cada uma com um cronômetro determinado pelo usuário.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Como funciona?
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Ao iniciar o Studyle, o usuário será apresentado à uma tela com os seguintes elementos:
+  1. Formulário para criação de tarefas, onde o usuário adicionará o nome e o tempo desejado para uma nova atividade;
+  2. Lista de tarefas, onde ficarão registradas as terefas criadas (que podem ser selecionadas) e finalizadas;
+  3. Cronômetro, onde o usuário, após selecionar uma tarefa na lista, pode clicar no botão "Começar" e iniciar a contagem de tempo para a tarefa selecionada.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Desenvolvimento e instalação
 
-### `npm run build`
+O Studyle foi desenvolvido utilizando tecnologias como ReactJS, para criação e interação entre componentes, e SaSS, para estilização dos conteúdos. A instalação e inicialização da aplicação requerem que o usuário possua `node.js` e `npm` instalados em sua máquina.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Para utilizá-lo, primeiro deve-se instalar o projeto, com os seguintes passos:
+  1. Clone o repositório remoto para sua máquina;
+  2. Acesse o diretório do projeto;
+  3. Por meio de uma interface de comando (Ex.: Bash, Powershell), rode os seguintes comandos:
+     `npm install` e depois `npm start`
+  4. Aguarde o tempo necessário e o Studyle abrirá em seu navegador padrão, na porta 8080.
