@@ -1,25 +1,25 @@
 .button {
-    align-self: center;
-    background-color: #e2e2e2;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.259);
-    color: #272626;
-    font-size: 1rem;
-    padding: 16px;
-    width: 150px;
-    cursor: pointer;
-    
-    &:active {
-        background-color: #cfcfcf;
-        box-shadow: 2px 2px 4px #0000009F inset;
-    }
+  align-self: center;
+  background-color: #fad764;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.259);
+  color: #272626;
+  font-size: 1rem;
+  padding: 16px;
+  width: 150px;
+  cursor: pointer;
+
+  &:active {
+    background-color: #d6b959;
+    box-shadow: 2px 2px 4px #0000009f inset;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .button {
-        grid-column-start: span 2;
-        justify-self: center;
-        width: 200px;
-        font-size: 1.5rem;
-    }
+  .button {
+    grid-column-start: span 2;
+    justify-self: center;
+    width: 200px;
+    font-size: 1.5rem;
+  }
 }
